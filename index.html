@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Michal Malohlava &hearts; GitHub Projects</title>
+    <title>Bo Werth &hearts; GitHub Projects</title>
     <link rel="stylesheet" type="text/css" href="assets/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/grid.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
@@ -77,7 +77,7 @@
         repos = repos || [];
         page = page || 1;
 
-        var uri = "https://api.github.com/users/mmalohlava/repos?callback=?"
+        var uri = "https://api.github.com/users/bowerth/repos?callback=?"
                 + "&per_page=100"
                 + "&page="+page;
 
@@ -133,7 +133,7 @@
       }
       addRepos();
 
-      $.getJSON("https://api.github.com/users/mmalohlava/followers?callback=?", function (result) {
+      $.getJSON("https://api.github.com/users/bowerth/followers?callback=?", function (result) {
         var followers = result.data;
 
         $(function () {
@@ -164,25 +164,29 @@
   <body>
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
-        <div id="logo"><h1>Michal Malohlava GitHub projects</h1></div>
-        <h1>Michal Malohlava GitHub</h1>
-        <p>Coding is beautiful!</p>
-        <p><a href="http://malohlava.name">malohlava.name</a></p>
-        <p><a href="http://twitter.com/mmalohlava">@mmalohlava</a></p>
+        <div id="logo"><h1>Bo Werth GitHub projects</h1></div>
+        <h1>Bo Werth GitHub</h1>
+        <!-- <p>The mind is the limit!</p> -->
+        <p>Blog <a href="http://rdata.work">rdata.work</a></p>
+        <p>2014-2015 <a href="http://sti.rdata.work">sti.rdata.work</a></p>
+        <p>Q1 2016 <a href="http://sdmx.rdata.work">sdmx.rdata.work</a></p>
+        <p>Q2 2016 <a href="http://dki.rdata.work">dki.rdata.work</a></p>
+        <p>Q3-Q4 2016 <a href="http://fbs.rdata.work">fbs.rdata.work</a></p>
+        <!-- <p><a href="mailto:bo.werth@gmail.com">bo.werth@gmail.com</a></p> -->
       </div>
 
       <div class="grid grid-3">
         <div id="statistics" class="grid-1 alpha header">
           <h1>Statistics</h1>
           <p>
-            <a href="https://github.com/mmalohlava/repositories"><span id="num-repos"><img src="assets/spinner.gif" /></span> public repos</a>
+            <a href="https://github.com/bowerth/repositories"><span id="num-repos"><img src="assets/spinner.gif" /></span> public repos</a>
             <br>
-            <a href="https://github.com/mmalohlava/followers"><span id="num-followers"><img src="assets/spinner.gif" /></span> followers</a>
+            <a href="https://github.com/bowerth/followers"><span id="num-followers"><img src="assets/spinner.gif" /></span> followers</a>
           </p>
         </div>
 
         <div id="recently-updated" class="grid-2 omega header">
-          <h1>Recently updated <a href="https://github.com/mmalohlava/repositories">View All on GitHub</a></h1>
+          <h1>Recently updated <a href="https://github.com/bowerth/repositories">View All on GitHub</a></h1>
           <ol id="recently-updated-repos"></ol>
         </div>
       </div>
